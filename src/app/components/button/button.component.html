@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="screen-calculator">
+    <div class="display">
+      <input type="text" class="screen" [value]="screenValue$ | async" readonly>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="row">
+      <button class="button" (click)="onOperatorClick('AC')">AC</button>
+      <button class="button" (click)="onOperatorClick('DEL')">DEL</button>
+    </div>
+    <div class="row">
+      <button class="button" (click)="onNumberClick(7)">7</button>
+      <button class="button" (click)="onNumberClick(8)">8</button>
+      <button class="button" (click)="onNumberClick(9)">9</button>
+      <button class="button" (click)="onOperatorClick('/')">/</button>
+    </div>
+    <div class="row">
+      <button class="button" (click)="onNumberClick(4)">4</button>
+      <button class="button" (click)="onNumberClick(5)">5</button>
+      <button class="button" (click)="onNumberClick(6)">6</button>
+      <button class="button" (click)="onOperatorClick('*')">*</button>
+    </div>
+    <div class="row">
+      <button class="button" (click)="onNumberClick(1)">1</button>
+      <button class="button" (click)="onNumberClick(2)">2</button>
+      <button class="button" (click)="onNumberClick(3)">3</button>
+      <button class="button" (click)="onOperatorClick('-')">-</button>
+    </div>
+    <div class="row">
+      <button class="button" (click)="onNumberClick(0)">0</button>
+      <button class="button" (click)="onDecimalClick()">.</button>
+      <button class="button" (click)="onOperatorClick('=')">=</button>
+      <button class="button" (click)="onOperatorClick('+')">+</button>
+    </div>
+  </div>
+</div>
